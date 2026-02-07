@@ -1,0 +1,32 @@
+name: Deploy Hugo to VPS
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.155.2"
+          extended: true
+
+      - name: Build site
+        run: hugo
+
+      - name: Copy site to VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "public/*"
+          target: "/home/user1/web/opplet.com/public_html/"
+          strip_components: 1
