@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<article class="doc">
+  <h1>{{ .Title }}</h1>
+
+  <div class="badge {{ if or (in (lower (.Params.classification | default "")) "zone 5") (in (lower (.Params.classification | default "")) "arena") }}arena{{ else }}citadel{{ end }}">
+    CLASSIFICATION: {{ .Params.classification | default "INTERNAL" }}
+  </div>
+
+  <div class="content" style="margin-top: 1.6rem;">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ end }}

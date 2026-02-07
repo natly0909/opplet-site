@@ -1,0 +1,264 @@
+/* =======================================================
+   OPPLET SOVEREIGN THEME — v6.4
+======================================================= */
+
+:root {
+
+  --bg: #020617;
+  --panel: rgba(15, 23, 42, 0.6);
+
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+
+  --citadel: #0ea5e9;
+  --arena: #f97316;
+
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0b1220, var(--bg));
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+
+/* =======================================================
+   TOPBAR
+======================================================= */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 40px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.brand a {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--citadel);
+  text-decoration: none;
+}
+
+.brand span {
+  font-family: var(--font-mono);
+  color: rgba(148, 163, 184, 0.7);
+  margin-left: 6px;
+}
+
+.nav-link {
+  margin-left: 18px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.7;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+
+/* =======================================================
+   LAYOUT
+======================================================= */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.footer {
+  padding: 40px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+
+/* =======================================================
+   HERO
+======================================================= */
+
+.hero {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.hero-title {
+  font-family: var(--font-mono);
+  font-size: 72px;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.hero-sub {
+  margin-top: 14px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.hero-quote {
+  margin-top: 40px;
+  font-family: var(--font-mono);
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+
+/* =======================================================
+   SPLIT MAP
+======================================================= */
+
+.splitmap {
+  margin-bottom: 90px;
+}
+
+.section-title {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.zone {
+  display: block;
+  padding: 30px;
+  border-radius: 18px;
+  text-decoration: none;
+  background: var(--panel);
+  transition: 0.25s;
+}
+
+.zone h3 {
+  font-family: var(--font-mono);
+  margin: 0;
+}
+
+.zone p {
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+.zone.citadel {
+  border: 1px solid rgba(14,165,233,0.5);
+}
+
+.zone.arena {
+  border: 1px solid rgba(249,115,22,0.5);
+}
+
+.zone:hover {
+  transform: translateY(-6px);
+}
+
+.gap {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+
+/* =======================================================
+   CARDS
+======================================================= */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 90px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.card h2 {
+  font-family: var(--font-mono);
+  margin-top: 0;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+
+/* =======================================================
+   BUTTONS
+======================================================= */
+
+.button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 18px;
+  border-radius: 12px;
+
+  font-family: var(--font-mono);
+  font-size: 13px;
+
+  border: 1px solid rgba(14,165,233,0.5);
+  color: var(--citadel);
+  text-decoration: none;
+}
+
+.button:hover {
+  border-color: var(--citadel);
+}
+
+.button.arena {
+  border-color: rgba(249,115,22,0.6);
+  color: var(--arena);
+}
+
+
+/* =======================================================
+   RECRUIT
+======================================================= */
+
+.recruit {
+  text-align: center;
+  padding: 70px 30px;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.recruit h2 {
+  font-family: var(--font-mono);
+}
+
+.recruit p {
+  color: var(--muted);
+  max-width: 600px;
+  margin: 20px auto;
+}

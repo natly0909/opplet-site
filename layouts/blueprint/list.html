@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<div class="docs">
+
+  <aside class="sidebar">
+    <h3>Blueprint</h3>
+
+    {{ $current := .RelPermalink }}
+
+    {{ range .Pages.ByWeight }}
+      <a class="side-link {{ if eq $current .RelPermalink }}active{{ end }}" href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    {{ end }}
+  </aside>
+
+  <section class="doc">
+    <h1>{{ .Title }}</h1>
+
+    {{ if .Content }}
+      <div class="content" style="margin-top:1rem;">
+        {{ .Content }}
+      </div>
+      <hr>
+    {{ end }}
+
+    <div>
+      {{ range .Pages.ByWeight }}
+        <div style="margin-bottom: 1.25rem;">
+          <a href="{{ .RelPermalink }}" style="display:block; font-size:1.05rem;">
+            {{ .Title }}
+          </a>
+          {{ if .Params.classification }}
+            <div class="badge" style="margin-top:0.35rem;">
+              CLASSIFICATION: {{ .Params.classification }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+</div>
+
+{{ end }}

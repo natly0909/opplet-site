@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<section class="doc">
+  <h1>{{ .Title }}</h1>
+
+  {{ if .Content }}
+    <div class="content" style="margin-top:1rem;">
+      {{ .Content }}
+    </div>
+    <hr>
+  {{ end }}
+
+  {{ range .Pages }}
+    <div style="margin-bottom: 1.25rem;">
+      <a href="{{ .RelPermalink }}" style="display:block; font-size:1.05rem;">
+        {{ .Title }}
+      </a>
+      {{ if .Params.classification }}
+        <div class="badge" style="margin-top:0.35rem;">
+          CLASSIFICATION: {{ .Params.classification }}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+</section>
+
+{{ end }}

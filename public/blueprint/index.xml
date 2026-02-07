@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blueprints on OPPLET // SOVEREIGN ARCHITECTURE</title>
+    <link>http://localhost:1313/blueprint/</link>
+    <description>Recent content in Blueprints on OPPLET // SOVEREIGN ARCHITECTURE</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blueprint/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Hemispheric Strategy</title>
+      <link>http://localhost:1313/blueprint/hemispheric-strategy/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blueprint/hemispheric-strategy/</guid>
+      <description>&lt;h2 id=&#34;physical-topology&#34;&gt;Physical Topology&lt;/h2&gt;&#xA;&lt;p&gt;The enclave is split into two distinct physical domains to isolate high-risk &amp;ldquo;Talent&amp;rdquo; workloads from the &amp;ldquo;Sovereign&amp;rdquo; control plane.&lt;/p&gt;&#xA;&lt;h3 id=&#34;cluster-a-the-citadel&#34;&gt;Cluster A (The Citadel)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Role:&lt;/strong&gt; The Brain&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Identity:&lt;/strong&gt; Alpha&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Power:&lt;/strong&gt; Low-Power Xeon E3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;server-b-the-arena&#34;&gt;Server B (The Arena)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Role:&lt;/strong&gt; The Muscle&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Identity:&lt;/strong&gt; Beta (Talent Lifecycle)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Power:&lt;/strong&gt; High-Density AMD EPYC&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

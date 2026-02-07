@@ -1,0 +1,29 @@
+baseURL = "https://opplet.com/"
+languageCode = "en-us"
+title = "OPPLET // SOVEREIGN ARCHITECTURE"
+
+[menu]
+  [[menu.main]]
+    name = "PHILOSOPHY"
+    url = "/philosophy/"
+    weight = 10
+
+  [[menu.main]]
+    name = "BLUEPRINT"
+    url = "/blueprint/"
+    weight = 20
+
+  [[menu.main]]
+    name = "THE METAL"
+    url = "/metal/"
+    weight = 30
+
+  [[menu.main]]
+    name = "PROTOCOLS"
+    url = "/protocols/"
+    weight = 40
+
+  [[menu.main]]
+    name = "// JOIN THE ARENA"
+    url = "https://wisenxt.com"
+    weight = 50
