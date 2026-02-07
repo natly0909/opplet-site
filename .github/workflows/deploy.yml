@@ -18,5 +18,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/user1/hugo-src
-            git pull
-            hugo
+            git pull origin main
+            /home/user1/hugo-src# /usr/local/bin/hugo --cleanDestinationDir -d /home/user1/web/opplet.com/public_html
