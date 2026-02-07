@@ -19,4 +19,4 @@ jobs:
           script: |
             cd /home/user1/hugo-src
             git pull origin main
-            /home/user1/hugo-src# /usr/local/bin/hugo --cleanDestinationDir -d /home/user1/web/opplet.com/public_html
+            /usr/local/bin/hugo --cleanDestinationDir -d /home/user1/web/opplet.com/public_html
